@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/aa20a964cc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Shopping Cart</title>
+</head>
+<body>
+    <div class="header">
+        <p class="logo">Shopping Cart</p>
+        <div id="buttons">
+            <button class="button-value" category="all">All</button>
+            <button class="button-value" category="women">Women</button>
+            <button class="button-value" category="men">Men</button>
+            <button class="button-value" category="mobile">Mobile</button>
+            <button class="button-value" category="shoes">Shoes</button>
+            <button class="button-value" category="accessories">Accessories</button>
+        </div>
+        <div class="custom-select">
+            <span>Sort products:</span>
+            <select name="" id="select">
+                <option value="Default">Default</option>
+                <option value="LowToHigh">Low to High</option>
+                <option value="HighToLow">High to Low</option>
+            </select>
+        </div>
+        <div class="cart">
+            <i class="fa-solid fa-cart-shopping"></i><p id="count">0</p>
+        </div>
+    </div>
+    <div class="container">
+        <div id="root"></div>
+        <div class="sidebar">
+            <div class="head"><p>My Cart</p></div>
+            <div id="cartItem">Your cart is empty</div>
+            <div class="foot">
+                <h3>Total</h3>
+                <h2 id="total">$ 0.00 </h2>
+            </div>
+            <form id="form">
+                <h1>Validation form</h1>
+                <div class="input-control">
+                    <label for="firstName">First Name:</label>
+                    <input id="firstName"type="text">
+                    <div class="error"></div>
+                </div>
+                <div class="input-control">
+                  <label for="lastName">Last Name:</label>
+                  <input id="lastName" type="text">
+                  <div class="error"></div>
+              </div>
+                <div class="input-control">
+                    <label for="email">Email</label>
+                    <input id="email" type="text">
+                    <div class="error"></div>
+                </div>
+                <div class="input-control">
+                    <label for="address">Address:</label>
+                    <input id="address"type="text">
+                    <div class="error"></div>
+                </div>
+                <hr>
+                <br>
+                <h2>Payment</h2>
+                <br>
+                <div class="custom-control custom-radio">
+                    <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+                    <label class="custom-control-label" for="credit">
+                        Credit card
+                    </label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
+                    <label class="custom-control-label" for="debit">
+                        Debit card
+                    </label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+                    <label class="custom-control-label" for="paypal">
+                        PayPal
+                    </label>
+                </div>
+                <div class="input-control">
+                    <label for="nameOnCard">Name on card</label>
+                    <input id="nameOnCard" type="text">
+                    <div class="error"></div>
+                </div>
+                <div class="input-control">
+                    <label for="creditCardNumber">Credit card number:</label>
+                    <input id="creditCardNumber"type="text">
+                    <div class="error"></div>
+                </div>
+                <div class="input-control">
+                    <label for="expiration">Expiration:</label>
+                    <input id="expiration"type="text">
+                    <div class="error"></div>
+                </div>
+                <div class="input-control">
+                    <label for="cvv">CVV:</label>
+                    <input id="cvv"type="text">
+                    <div class="error"></div>
+                </div>
+               <button type="submit">Submit</button>
+            </form> 
+        </div>
+    </div>
+    <script src="shoppingCart.js"></script>
+</body>
+</html>

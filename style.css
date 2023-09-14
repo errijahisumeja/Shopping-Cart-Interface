@@ -1,0 +1,353 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    font-size: 18px;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header{
+    height: 80px;
+    width: 95%;
+    background-color: rgb(95, 215, 129);
+    border-radius: 3px;
+    margin: 30px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 2px solid #e5e5e5;
+    color: white;
+    flex-direction: row;
+
+}
+.header .logo{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.button-value{
+    padding: 0.3em ; 
+    background-color: transparent;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 20px;
+    border: none;
+}
+
+.custom-select{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.custom-select select{
+    width: 130px;
+    border: none;
+    font-weight: bold;
+    color: rgb(74, 1, 1);
+    background: transparent;
+    cursor: pointer;
+}
+
+.cart{
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 10px;
+    border-radius: 3px;
+    width: 80px;
+}
+
+.fa-solid{
+    color: rgb(95, 215, 129);
+}
+
+.cart p{
+    height: 22px;
+    width: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 22px;
+    background-color: rgb(95, 215, 129);
+    color: white;
+}
+
+.container{
+    display: flex;
+    width: 95%;
+    margin-bottom: 30px;
+}
+
+#root{
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.sidebar{
+    width: 30%;
+    border-radius: 5px;
+    background-color: #eee;
+    margin-left: 20px;
+    padding: 15px;
+    text-align: center;
+}
+
+.head{
+    background-color: rgb(95, 215, 129);
+    border-radius: 3px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+
+.foot{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+    border-top: 1px solid #333;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; 
+    border: 1px solid rgb(95, 215, 129);
+    border-radius: 5px;
+    padding: 15px;
+    height: 320px;
+}
+
+.img-box{
+    width: 100%;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.images{
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.bottom{
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 110px; 
+}
+
+h2{
+    font-size: 20px;
+    color: red;
+}
+
+.bottom button{
+    width: 100%;
+    position: relative;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(95, 215, 129);
+    padding: 7px 25px;
+    cursor: pointer;
+    color: white;
+}
+
+button:hover{
+    background-color: #333;
+}
+
+.cart-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: white;
+    border-bottom: 1px solid #aaa;
+    border-radius: 3px;
+    margin: 10px 10px;
+}
+
+.row-img{
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgb(95, 215, 129);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rowimg{
+    max-width: 43px;
+    max-height: 43px;
+    border-radius: 50%;
+}
+
+.fa-trash:hover{
+    cursor: pointer;
+    color: #333;
+}
+  
+#form h1 {
+    color: rgb(9, 35, 71);
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+  
+#form button {
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 15px; 
+    border: 0px;
+    background:  rgb(95, 215, 129);
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+    text-transform: uppercase;
+}
+
+#form button:hover{
+    background-color: #333;    
+}
+  
+.input-control {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+  
+.checking{
+    margin-bottom: 15px;
+    align-items: center;
+}
+  
+.input-control label{
+    width: 200px;
+    color: #000000;
+    text-align: left;
+    margin-right: 10px;
+    font-size: 17px;
+}
+  
+.checking label{
+    width: 200px;
+    color: #000000;
+    text-align: left;
+    margin-right: 10px;
+    font-size: 17px;
+}
+  
+.input-control input{
+    width: 100%;
+    outline: none;
+    border: 1px solid #000000;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+  
+.input-control input:focus,
+.checking input:focus{
+    border: 1px solid rgb(9, 35, 71);
+}
+  
+.input-control.success input {
+    border-color: #09c372;
+}
+  
+.input-control.error input {
+    border-color: #ff0000;
+}
+  
+.input-control .error {
+    color: #ff0000;
+    text-align: left;
+    font-size: 13px;
+    height: 17px;
+}
+ 
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 5px;
+        height: 180px;
+        justify-content: left;
+        text-align: left;
+    }
+
+    .header .logo {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .custom-select{
+        justify-self: left;
+    }
+    .custom-select select {
+        width: 120px;
+        justify-content: left;
+        padding: 1px;
+    }
+    .box{
+        height: 380px;
+    }
+    #root {
+        padding-bottom: 50px;
+        
+        width: 100%;
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    #root {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cart {
+        width: 60px;
+        padding: 5px;
+    }
+
+    .cart p {
+        font-size: 14px;
+    }
+}
